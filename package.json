@@ -1,0 +1,34 @@
+{
+  "name": "course-project",
+  "version": "1.0.0",
+  "description": "prometheus-course",
+  "main": "JS/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/style.scss css/style2.css",
+    "serve": "serve",
+    "start": "npm-run-all --parallel serve watch-css "
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notmb/course-project.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Jvascript"
+  ],
+  "author": "Olha Symchych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notmb/course-project/issues"
+  },
+  "homepage": "https://github.com/notmb/course-project#readme",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
