@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script defer type="text/javascript" src="JS/app.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <img class="burger" id="burger" src="images/burger.png" alt="burger" height="80%">
+            <img class="logo-img" src="images/logo.png" alt="Лого" height="100%">
+            <nav class="header-menu" id="header-menu-id">
+                <a class="menu-item" href="#">Каталог</a>
+                <a class="menu-item" href="#">Про нас</a>
+                <a class="menu-item" href="#">Збери букет</a>
+                <a class="menu-item" href="#">Контакти</a>
+            </nav>
+        </header>
+
+        <section class="section-1 section">
+            <span class="cont-for-text">
+                <h1 class="fz24" style="margin: 6px 0;">Букет із кущових троянд “Довгоочікуване щастя”</h1>
+                <p style="font-size: 14px;">Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої людини
+                </p>
+            </span>
+            <img class="buket-img" src="images/bg_web-no-background.png" alt="Букет" height="85%">
+            <img class="buket-mobi-img" src="images/bg_mob-no-background.png" alt="Букет" height="65%">
+        </section>
+
+        <section class="section-2 section">
+
+            <div class="section-2-line-1">
+                <nav class="section-2-menu">
+                    <div class="section-2-menu-item backgraund-menu-item1">
+                        <button class="section-2-button" type="button">Букети</button>
+                    </div>
+                    <div class="section-2-menu-item backgraund-menu-item2">
+                        <button class="section-2-button" type="button">Живі квіти</button>
+                    </div>
+                    <div class="section-2-menu-item backgraund-menu-item3">
+                        <button class="section-2-button trans" type="button">"Свій" букет</button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="section-2-line-2">
+                <span class="cont-for-text">
+                    <h1 class="fz24" style="margin: 30px 0 15px 0;">Про нас</h1>
+                    <p style="font-size: 14px; margin: 0 0 10px 0">Яких квітів тут лише немає! І садові, і польові, і
+                        кімнатні у глиняних горщиках.
+                        Очі розбігаються від такого достатку.</p>
+                    <p style="font-size: 14px; margin: 0 0 10px 0">Тут представлена і багата колекція кімнатних рослин:
+                        кактуси різної форми та величини,
+                        ніжні фіалки, усипані квітами, аспарагуси, фікуси.</p>
+                </span>
+                <!-- <div class="section-2-line-2-img-box"> -->
+                <img class="img-women" src="images/women.png" alt="Букет" height="180px" width="300px">
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <section class="section-3">
+            <p style="color: #989EC3; font-size: 16px; margin-top: 16px;">Працюємо для вас</p>
+            <div class="section-3-container">
+                <div class="container-img">
+                    <img class="section-3-img" src="images/S3nav1.png" alt="букет">
+                    <p style="width: 100%; min-height: 28px; color: #351F21; font-size: 11px; text-align: center;">
+                        Конструктрор унікального букета</p>
+                </div>
+                <div class="container-img">
+                    <img class="section-3-img" src="images/S3nav2.png" alt="букет">
+                    <p style="width: 100%; min-height: 28px; color: #351F21; font-size: 11px; text-align: center;">
+                        Безкоштовна доставка по місту до 2-х годин</p>
+                </div>
+                <div class="container-img">
+                    <img class="section-3-img" src="images/S3nav3.png" alt="букет">
+                    <p style="width: 120px; color: #351F21; font-size: 11px; text-align: center;">Наявність кімнатних
+                        рослин</p>
+                </div>
+                <div class="container-img">
+                    <img class="section-3-img" src="images/S3nav4.png" alt="букет">
+                    <p style="width: 120px; color: #351F21; font-size: 11px; text-align: center;">Вибір квітів для
+                        коханих, мам та друзів</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-4">
+            <h1 class="fz24">Каталог</h1>
+            <div class="catalog" id="catalog">
+
+            </div>
+        </section>
+
+        <section class="section-5">
+
+            <div class="reviews-container" id="reviews-container">
+                <h1 class="f_z24 r-c-h1">Відгуки</h1>
+            </div>
+
+            <div class="send-reviews">
+                <p style="font-size: 20px; color: rgb(53, 31, 33); margin-top: 48px; margin-bottom: 0;">Додати відгук:
+                </p>
+                <form class="review-form" action="#">
+                    <input class="reviewer-name" id="reviewer-name" name="firstname" type="text" placeholder="Ваше ім'я">
+                    <textarea class="review" id="review" name="review" type="text" placeholder="Ваш відгук"></textarea>
+                    <button class="review-button" id="review-button" type="button">Надіслати</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="section-6">
+            <div class="footer-box-logo">
+                <img class="logo" src="images/logo.png" alt="Лого">
+                <p style="font-size: 11px;"> Copyright Ⓒ 2022</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-box">
+                    <h2 style="font-size: 14px; ">Контакти</h2>
+                    <p style="font-size: 11px; ">(095) 000 00 00</p>
+                    <p style="font-size: 11px; ">(097) 000 00 00</p>
+                    <p style="font-size: 11px; ">Ми працюємо цілодобово</p>
+                </div>
+                <div class="footer-box">
+                    <h2 style="font-size: 14px;">Інформація</h2>
+                    <a href="#" style="font-size: 11px;">Про нас</a>
+                    <a href="#" style="font-size: 11px;">Хіт продажу</a>
+                    <a href="#" style="font-size: 11px;">Відгуки</a>
+                    <a href="#" style="font-size: 11px;">Доставка і оплата</a>
+                </div>
+                <div class="footer-box">
+                    <h2 style="font-size: 14px;">Каталог</h2>
+                    <a href="#" style="font-size: 11px;">Збери свій букет</a>
+                    <a href="#" style="font-size: 11px;">Живі квіти</a>
+                    <a href="#" style="font-size: 11px;">Кімнатні рослини</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
