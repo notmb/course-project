@@ -1,4 +1,5 @@
-import { buttonRev } from './loading content.js';
+import { buttonRev, init} from './loading content.js';
+
 
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
@@ -6,6 +7,15 @@ function toggleMobileMenu() {
     headerId.classList.toggle('open');
 }
 burgerID.onclick = toggleMobileMenu;
+
+// function init(itemObj, id, func){
+//     const fragment = document.createDocumentFragment();
+
+//     itemObj.forEach((card) => {
+//         fragment.appendChild(func(card));
+//     });
+//     appendContent(fragment, id);
+// }
 
 function newGoods(goods) {
     //card
@@ -49,19 +59,19 @@ goods.onload = function() {
 }
 goods.send();
 
-function appendContent(shop, id){
-    const el = document.getElementById(id);
+// function appendContent(shop, id){
+//     const el = document.getElementById(id);
 
-    el.appendChild(shop);
-}
- function init(itemObj, id, func){
-     const fragment = document.createDocumentFragment();
+//     el.appendChild(shop);
+// }
+//  function init(itemObj, id, func){
+//      const fragment = document.createDocumentFragment();
 
-     itemObj.forEach((card) => {
-         fragment.appendChild(func(card));
-     });
-     appendContent(fragment, id);
-}
+//      itemObj.forEach((card) => {
+//          fragment.appendChild(func(card));
+//      });
+//      appendContent(fragment, id);
+// }
 
 function newReview(review) {
     //review
