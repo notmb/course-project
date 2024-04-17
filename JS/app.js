@@ -8,14 +8,7 @@ function toggleMobileMenu() {
 }
 burgerID.onclick = toggleMobileMenu;
 
-// function init(itemObj, id, func){
-//     const fragment = document.createDocumentFragment();
 
-//     itemObj.forEach((card) => {
-//         fragment.appendChild(func(card));
-//     });
-//     appendContent(fragment, id);
-// }
 
 function newGoods(goods) {
     //card
@@ -59,19 +52,6 @@ goods.onload = function() {
 }
 goods.send();
 
-// function appendContent(shop, id){
-//     const el = document.getElementById(id);
-
-//     el.appendChild(shop);
-// }
-//  function init(itemObj, id, func){
-//      const fragment = document.createDocumentFragment();
-
-//      itemObj.forEach((card) => {
-//          fragment.appendChild(func(card));
-//      });
-//      appendContent(fragment, id);
-// }
 
 function newReview(review) {
     //review
