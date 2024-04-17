@@ -1,4 +1,4 @@
-import { init } from './loading content';
+import { buttonRev } from './loading content.js';
 
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
@@ -54,13 +54,13 @@ function appendContent(shop, id){
 
     el.appendChild(shop);
 }
-function init(itemObj, id, func){
-    const fragment = document.createDocumentFragment();
+ function init(itemObj, id, func){
+     const fragment = document.createDocumentFragment();
 
-    itemObj.forEach((card) => {
-        fragment.appendChild(func(card));
-    });
-    appendContent(fragment, id);
+     itemObj.forEach((card) => {
+         fragment.appendChild(func(card));
+     });
+     appendContent(fragment, id);
 }
 
 function newReview(review) {
@@ -111,6 +111,6 @@ function sendReview(){
     k.responseType = 'json';
     k.send(JSON.stringify(obj));
 }
-const buttonRev = document.getElementById('review-button');
+// const buttonRev = document.getElementById('review-button');
 buttonRev.addEventListener('click', sendReview);
 
