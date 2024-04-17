@@ -1,4 +1,4 @@
-
+import { init } from './loading content';
 
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
