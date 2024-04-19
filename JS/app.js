@@ -1,5 +1,5 @@
 import { buttonRev, init} from './loading content.js';
-
+import {newGoods} from './createCard.js';
 
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
@@ -10,37 +10,37 @@ burgerID.onclick = toggleMobileMenu;
 
 
 
-function newGoods(goods) {
-    //card
-    const article = document.createElement('article');
-    article.classList.add('card');
-    //image
-    const img = document.createElement('img');
-    img.classList.add('section-4-img-card');
-    img.src = goods.img;
-    //description
-    const descDiv = document.createElement('div');
-    descDiv.classList.add('info-card');
-    //name
-    const name = document.createElement('p');
-    name.innerHTML = goods.title;
-    name.style.marginBottom = '0';
-    //description
-    const description = document.createElement('p');
-    description.textContent = goods.description;
-    description.style.margin = '0';
-    //price
-    const price = document.createElement('p');
-    price.textContent = goods.price + ' грн';
+// function newGoods(goods) {
+//     //card
+//     const article = document.createElement('article');
+//     article.classList.add('card');
+//     //image
+//     const img = document.createElement('img');
+//     img.classList.add('section-4-img-card');
+//     img.src = goods.img;
+//     //descriptionCard
+//     const descDiv = document.createElement('div');
+//     descDiv.classList.add('info-card');
+//     //name
+//     const name = document.createElement('p');
+//     name.innerHTML = goods.title;
+//     name.style.marginBottom = '0';
+//     //description
+//     const description = document.createElement('p');
+//     description.textContent = goods.description;
+//     description.style.margin = '0';
+//     //price
+//     const price = document.createElement('p');
+//     price.textContent = goods.price + ' грн';
 
-    descDiv.appendChild(name);
-    descDiv.appendChild(description);
-    descDiv.appendChild(price);
-    article.appendChild(img);
-    article.appendChild(descDiv);
+//     descDiv.appendChild(name);
+//     descDiv.appendChild(description);
+//     descDiv.appendChild(price);
+//     article.appendChild(img);
+//     article.appendChild(descDiv);
 
-    return article;
-}
+//     return article;
+// }
 //відображення каталогу
 const goods = new XMLHttpRequest();
 goods.open('GET', 'https://run.mocky.io/v3/ced24126-e530-48f5-bb23-68efa4a532d1');
