@@ -1,6 +1,6 @@
 import { buttonRev, init} from './loading content.js';
 import {newGoods} from './createCard.js';
-
+import {newReview} from './createReview.js';
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
 function toggleMobileMenu() {
