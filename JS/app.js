@@ -1,6 +1,6 @@
 import { buttonRev, init} from './loading content.js';
 import {newGoods} from './createCard.js';
-import {newReview} from './createReview.js';
+import {newReview, sendReview} from './Review.js';
 const headerId = document.getElementById('header-menu-id');
 const burgerID = document.getElementById('burger');
 function toggleMobileMenu() {
@@ -21,24 +21,6 @@ goods.onload = function() {
 goods.send();
 
 
-// function newReview(review) {
-//     //review
-//     const article = document.createElement('article');
-//     article.classList.add('article-card');
-//     //name
-//     const name = document.createElement('h6');
-//     name.classList.add('r-c-h6');
-//     name.textContent = review.name;
-//     //review
-//     const textReview = document.createElement('p');
-//     textReview.classList.add('fz14');
-//     textReview.textContent = review.body;
-
-//     article.appendChild(name);
-//     article.appendChild(textReview);
-
-//     return article;
-// }
 //відображення відгуку
 const reviews = new XMLHttpRequest();
 reviews.open('GET', 'https://jsonplaceholder.typicode.com/comments');
@@ -52,23 +34,23 @@ reviews.onload = function() {
 reviews.send();
 
 //надсилання відгуку
-function sendReview(){
-    const obj = {};
-    obj.postId = 1;
+// function sendReview(){
+//     const obj = {};
+//     obj.postId = 1;
 
-    const name = document.getElementById('reviewer-name');
-    obj.name = name.value;
+//     const name = document.getElementById('reviewer-name');
+//     obj.name = name.value;
 
-    obj.email = 'mama@gmail.com';
+//     obj.email = 'mama@gmail.com';
 
-    const review = document.getElementById('review');
-    obj.body = review.value;
+//     const review = document.getElementById('review');
+//     obj.body = review.value;
     
-    const k = new XMLHttpRequest();
-    k.open('POST', 'https://jsonplaceholder.typicode.com/comments');
-    k.responseType = 'json';
-    k.send(JSON.stringify(obj));
-}
+//     const k = new XMLHttpRequest();
+//     k.open('POST', 'https://jsonplaceholder.typicode.com/comments');
+//     k.responseType = 'json';
+//     k.send(JSON.stringify(obj));
+// }
 // const buttonRev = document.getElementById('review-button');
 buttonRev.addEventListener('click', sendReview);
 

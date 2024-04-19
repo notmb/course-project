@@ -16,3 +16,21 @@ export function newReview(review) {
 
     return article;
 }
+
+export function sendReview(){
+    const obj = {};
+    obj.postId = 1;
+
+    const name = document.getElementById('reviewer-name');
+    obj.name = name.value;
+
+    obj.email = 'mama@gmail.com';
+
+    const review = document.getElementById('review');
+    obj.body = review.value;
+    
+    const k = new XMLHttpRequest();
+    k.open('POST', 'https://jsonplaceholder.typicode.com/comments');
+    k.responseType = 'json';
+    k.send(JSON.stringify(obj));
+}
