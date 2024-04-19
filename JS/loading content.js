@@ -12,5 +12,3 @@ function appendContent(shop, id){
 
     el.appendChild(shop);
 }
-
-export const buttonRev = document.getElementById('review-button');
