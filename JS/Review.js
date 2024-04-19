@@ -33,4 +33,7 @@ export function sendReview(){
     k.open('POST', 'https://jsonplaceholder.typicode.com/comments');
     k.responseType = 'json';
     k.send(JSON.stringify(obj));
+
+    name.value = "";
+    review.value = "";
 }
