@@ -1,4 +1,4 @@
-function newReview(review) {
+export function newReview(review) {
     //review
     const article = document.createElement('article');
     article.classList.add('article-card');
